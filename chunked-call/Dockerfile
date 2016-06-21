@@ -7,9 +7,10 @@ RUN apt-get update \
 	build-essential \
 	git \
 	python-dev
+	#python-pip
 	
-RUN pip install --upgrade pip
-RUN pip install 
+#RUN pip install --upgrade pip
+#RUN pip install 
 
 RUN mkdir /data
 RUN git clone https://github.com/vgteam/vg.git /opt/chunked_call
